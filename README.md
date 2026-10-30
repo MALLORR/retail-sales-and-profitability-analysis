@@ -89,7 +89,7 @@ Through this project, I aim to strengthen my practical understanding of SQL, rel
 
 ## Author
 
-Mallor
+Yusif Mohammed
 
 **Project Type:** Data Analytics Portfolio Project
 
