@@ -17,6 +17,7 @@ Business Insight 2.2
 Sales performance varies considerably across months. November and December recorded the highest revenue, while September also demonstrated strong performance. February recorded the lowest revenue. This suggests potential seasonal sales patterns, with stronger performance toward the final months of the year
 
 Business Insight 2.3
+
 December generated the highest sales revenue ($334,484.49), followed by November and September. However, November generated the highest profit ($43,843.24), despite ranking second in sales. This indicates that the month generating the most revenue does not necessarily generate the most profit.
 
 Important business observation: November appears particularly strong in profitability, making it worth investigating further when we analyse profit margins.
