@@ -83,6 +83,7 @@ The Fellowes PB500 Electric Punch also performs strongly, generating $7,753.04 i
 Technology products dominate the top 10 most profitable products, particularly Canon and HP printing equipment. The Canon imageCLASS 220 is the leading profit contributor, while Copiers consistently demonstrate strong profitability. This reinforces Technology's position as the strongest-performing category.
 
 **Bussiness Insights 2.4**
+Top 10 Loss-Making Products
 
 Key findings:
 
