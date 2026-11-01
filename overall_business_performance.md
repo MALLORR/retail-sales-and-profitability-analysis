@@ -5,6 +5,7 @@ The Superstore dataset records total sales of **$2,297,200.86** and total profit
 ### Business Insight
 
 **Overall Business Performance**
+
 The business demonstrates positive overall profitability, generating approximately $2.3 million in sales and $286,397 in profit. Its customer base and order volume provide a useful foundation for further investigation into sales performance and profitability across products, customer segments and regions.
 
 **Business Insight 1.1**
