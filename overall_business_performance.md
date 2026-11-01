@@ -26,4 +26,70 @@ Important business observation: November appears particularly strong in profitab
 
 **Business Insight 1.4**
 
-Monthly sales experienced considerable fluctuations throughout the four-year period. March and September repeatedly recorded significant increases, while January 2018 showed a 94.08% decline compared with December 2017. However, this decline is influenced by the incomplete 2018 dataset and should not be interpreted as an actual business downturn.
+Monthly sales experienced considerable fluctuations throughout the four-year period. March and September repeatedly recorded significant increases, while January 2018 showed a 94.08% decline compared with December 2017. 
+
+
+**Sales Performance by Product Category**
+
+
+**Bussiness Insights 2.1**
+
+ Sales by Product Category
+
+Technology leads in revenue, generating $836,154.03, and also records the highest profit at $145,454.95.
+Office Supplies generates $719,047.03 in sales but sells the highest quantity, with 22,906 units.
+Furniture generates $741,999.80 in sales but contributes only $18,451.27 in profit, making it the weakest category in profitability.
+
+Technology is the strongest-performing category in both revenue and profit. Office Supplies leads in sales volume, while Furniture generates relatively low profit despite substantial revenue. This suggests that Furniture may have pricing or cost-related profitability challenges that require further investigation.
+
+
+**Bussiness Insights 2.1**
+
+Sales by Sub-Category
+
+Key findings:
+
+Phones generated the highest sales at $330,007.05.
+Copiers generated the highest profit at $55,617.82, despite having relatively low sales volume.
+Tables recorded the largest loss at -$17,725.48.
+Bookcases and Supplies also recorded negative profits.
+Paper performed well, generating $34,053.57 profit from $78,479.21 in sales.
+
+Phones lead in revenue, while Copiers deliver the highest profit despite relatively low sales volume. However, Tables, Bookcases and Supplies operate at a loss. Tables are the biggest concern, suggesting that their pricing, discounting or operating costs may be affecting profitability.
+
+
+**Bussiness Insights 2.2**
+
+ Profit Margin by Category
+
+Technology has the highest profit margin at 17.40%.
+Office Supplies follows closely at 17.04%.
+Furniture has a significantly lower margin of 2.49%.
+
+Technology and Office Supplies convert approximately 17% of their sales into profit, indicating relatively strong profitability. Furniture converts only 2.49%, confirming that its profitability is considerably weaker despite generating substantial revenue. Further investigation into Furniture's products, discounts and costs is necessary
+
+
+**Bussiness Insights 2.3**
+
+ Top 10 Most Profitable Products
+
+Key findings:
+
+Canon imageCLASS 220 is the most profitable product, generating $25,199.93 in profit.
+Copiers feature prominently among the top-performing products.
+Technology dominates the list, with most of the top 10 products belonging to this category.
+The Fellowes PB500 Electric Punch also performs strongly, generating $7,753.04 in profit.
+
+Technology products dominate the top 10 most profitable products, particularly Canon and HP printing equipment. The Canon imageCLASS 220 is the leading profit contributor, while Copiers consistently demonstrate strong profitability. This reinforces Technology's position as the strongest-performing category.
+
+**Bussiness Insights 2.4**
+
+Key findings:
+
+Cubify CubeX 3D Printer records the largest loss at -$8,879.97.
+Technology Machines appear frequently among the loss-making products.
+Furniture Tables also feature prominently, reinforcing the earlier finding that Tables are an unprofitable sub-category.
+The GBC DocuBind P400 Electric Binder generated $17,965.07 in sales but incurred a loss of $1,878.17.
+
+
+Losses are concentrated in certain Machines and Tables products. The Cubify CubeX 3D Printer records the largest individual product loss of $8,879.97. This reinforces the earlier findings about weak Furniture profitability and suggests that selected Technology products also require closer attention. Pricing, discounts and product costs should be investigated.

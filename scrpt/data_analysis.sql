@@ -137,3 +137,88 @@ SELECT
 FROM Sales_Growth
 
 ORDER BY Sales_Year, Sales_Month;
+
+/*
+SECTION 3: PRODUCT PERFORMANCE ANALYSIS
+
+ SALES PERFORMANCE BY PRODUCT CATEGORY
+
+OBJECTIVE:
+Evaluate revenue, profitability and sales volume
+across the different product categories.
+*/
+
+SELECT
+    Category,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    SUM(Quantity) AS Total_Quantity_Sold,
+    COUNT(DISTINCT Product_ID) AS Total_Products
+FROM superstore_cleaned
+GROUP BY Category
+ORDER BY Total_Sales DESC;
+
+
+/* Sub-Category */
+
+SELECT
+    Sub_Category,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    SUM(Quantity) AS Total_Quantity_Sold
+FROM superstore_cleaned
+GROUP BY Sub_Category
+ORDER BY Total_Sales DESC;
+
+/* Profitability by Product Category */
+
+SELECT
+    Category,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND(
+        (SUM(Profit) / NULLIF(SUM(Sales), 0)) * 100,
+        2
+    ) AS Profit_Margin_Percentage
+FROM superstore_cleaned
+GROUP BY Category
+ORDER BY Profit_Margin_Percentage DESC;
+
+
+/* Most Profitable Products */
+
+SELECT
+    Product_ID,
+    Product_Name,
+    Category,
+    Sub_Category,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+FROM superstore_cleaned
+GROUP BY
+    Product_ID,
+    Product_Name,
+    Category,
+    Sub_Category
+ORDER BY Total_Profit DESC
+LIMIT 10;
+
+
+/* Most Loss-Making  Products */
+
+SELECT
+    Product_ID,
+    Product_Name,
+    Category,
+    Sub_Category,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+FROM superstore_cleaned
+GROUP BY
+    Product_ID,
+    Product_Name,
+    Category,
+    Sub_Category
+HAVING SUM(Profit) < 0
+ORDER BY Total_Profit ASC
+LIMIT 10;
