@@ -148,7 +148,49 @@ Key findings:
 
 134 customers placed 5 orders, the largest customer group.
 Only 12 customers placed a single order.
-781 out of 793 customers (98.49%) placed more than one order.
+781 out of 793 customers 98.49% placed more than one order.
 One customer placed 17 orders, the highest frequency recorded.
 
 The majority of customers placed multiple orders during the period analysed, with approximately 98.49% purchasing more than once. Customers placing 5–8 orders form the largest concentration of purchasing activity. This indicates strong repeat-purchase activity within the dataset, although further analysis would be needed to understand customer retention over time.
+
+
+**Bussiness Insights**
+
+Sales Performance by Region
+
+The West region leads in sales ($725,457.82), profit ($108,418.45), order volume and customer count. The East region ranks second in both sales and profit.
+
+However, the Central region generates $501,239.89 in sales but only $39,706.36 in profit, indicating weaker profitability compared with the other regions. This makes Central a region worth investigating further.
+
+Key finding: West is the strongest-performing region, while Central has the weakest profit performance.
+
+**Bussiness Insights**
+
+Sales Performance by State
+
+California is the strongest-performing state, generating $457,687.63 in sales and $76,381.39 in profit. New York ranks second in sales and generates $74,038.55 in profit.
+
+However, Texas is a major concern. Despite generating $170,188.05 in sales, it records a loss of $25,729.36, the largest state-level loss in the dataset. Pennsylvania follows with a loss of $15,559.96.
+
+Key finding: California and New York lead in profitability, while Texas has the largest financial loss despite its substantial revenue.
+
+**Bussiness Insights**
+
+Top 10 Cities by Sales
+
+New York City leads with $256,368.16 in sales and $62,036.98 in profit, followed by Los Angeles with $175,851.34 in sales.
+
+However, Philadelphia, Houston, Chicago and Jacksonville generate losses despite their substantial sales. Philadelphia records the largest loss among the top 10 cities, at -$13,837.77.
+
+Key finding: High sales do not always translate into profitability. New York City is the strongest city, while Philadelphia is the biggest concern among the top 10.
+
+
+**Bussiness Insights**
+
+Top Loss-Making Cities
+
+Philadelphia records the largest city-level loss at $13,837.77, followed by Houston at $10,153.55 and San Antonio at $7,299.05.
+
+Texas appears repeatedly among the loss-making locations, with Houston, San Antonio and Dallas all recording negative profits. This reinforces the earlier finding that Texas is a major area of concern.
+
+Key finding: Losses are concentrated in a number of cities, particularly in Texas and Pennsylvania. These locations may require further investigation into product pricing, discounts and costs.

@@ -311,3 +311,85 @@ GROUP BY Total_Orders
 ORDER BY Total_Orders;
 
 
+/*
+SECTION 5: REGIONAL PERFORMANCE ANALYSIS
+
+SALES PERFORMANCE BY REGION
+
+OBJECTIVE:
+Compare revenue, profit and order volume
+across geographical regions.
+*/
+
+SELECT
+    Region,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    COUNT(DISTINCT Order_ID) AS Total_Orders,
+    COUNT(DISTINCT Customer_ID) AS Total_Customers
+FROM superstore_cleaned
+GROUP BY Region
+ORDER BY Total_Sales DESC;
+
+
+/*
+SALES PERFORMANCE BY STATE
+
+OBJECTIVE:
+Compare sales, profit and order volume
+across individual states.
+*/
+
+SELECT
+    State,
+    Region,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    COUNT(DISTINCT Order_ID) AS Total_Orders
+FROM superstore_cleaned
+GROUP BY State, Region
+ORDER BY Total_Sales DESC;
+
+
+/*
+ TOP 10 CITIES BY SALES
+
+OBJECTIVE:
+Identify the highest-revenue cities
+and compare their profitability.
+*/
+
+SELECT
+    City,
+    State,
+    Region,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    COUNT(DISTINCT Order_ID) AS Total_Orders
+FROM superstore_cleaned
+GROUP BY City, State, Region
+ORDER BY Total_Sales DESC
+LIMIT 10;
+
+
+/*
+ LOSS-MAKING CITIES
+
+OBJECTIVE:
+Identify the 10 cities with the
+lowest profit contributions.
+*/
+
+SELECT
+    City,
+    State,
+    Region,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+FROM superstore_cleaned
+GROUP BY City, State, Region
+HAVING SUM(Profit) < 0
+ORDER BY Total_Profit ASC
+LIMIT 10; 
+
+
