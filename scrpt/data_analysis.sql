@@ -221,4 +221,93 @@ GROUP BY
     Sub_Category
 HAVING SUM(Profit) < 0
 ORDER BY Total_Profit ASC
+LIMIT 10; category
+
+
+/*
+SECTION 4: CUSTOMER ANALYSIS
+
+ SALES PERFORMANCE BY CUSTOMER SEGMENT
+
+OBJECTIVE:
+Evaluate sales, profit and order volume
+across different customer segments.
+*/
+
+SELECT
+    Segment,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    COUNT(DISTINCT Order_ID) AS Total_Orders,
+    COUNT(DISTINCT Customer_ID) AS Total_Customers
+FROM superstore_cleaned
+GROUP BY Segment
+ORDER BY Total_Sales DESC;
+
+
+/*
+ TOP 10 CUSTOMERS BY SALES
+
+OBJECTIVE:
+Identify customers who generate the highest sales revenue.
+*/
+
+SELECT
+    Customer_ID,
+    Customer_Name,
+    COUNT(DISTINCT Order_ID) AS Total_Orders,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+FROM superstore_cleaned
+GROUP BY
+    Customer_ID,
+    Customer_Name
+ORDER BY Total_Sales DESC
 LIMIT 10;
+
+
+/*
+TOP 10 CUSTOMERS BY PROFIT
+
+OBJECTIVE:
+Identify customers who contribute the highest
+profit to the business.
+*/
+
+SELECT
+    Customer_ID,
+    Customer_Name,
+    COUNT(DISTINCT Order_ID) AS Total_Orders,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit
+FROM superstore_cleaned
+GROUP BY
+    Customer_ID,
+    Customer_Name
+ORDER BY Total_Profit DESC
+LIMIT 10;
+
+
+/*
+CUSTOMER PURCHASING PATTERNS
+
+OBJECTIVE:
+Examine customer order frequency to understand
+purchasing behaviour.
+*/
+
+WITH Customer_Orders AS (
+    SELECT
+        Customer_ID,
+        COUNT(DISTINCT Order_ID) AS Total_Orders
+    FROM superstore_cleaned
+    GROUP BY Customer_ID
+)
+SELECT
+    Total_Orders,
+    COUNT(*) AS Number_of_Customers
+FROM Customer_Orders
+GROUP BY Total_Orders
+ORDER BY Total_Orders;
+
+

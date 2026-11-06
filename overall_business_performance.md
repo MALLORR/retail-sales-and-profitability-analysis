@@ -8,23 +8,23 @@ The Superstore dataset records total sales of **$2,297,200.86** and total profit
 
 The business demonstrates positive overall profitability, generating approximately $2.3 million in sales and $286,397 in profit. Its customer base and order volume provide a useful foundation for further investigation into sales performance and profitability across products, customer segments and regions.
 
-**Business Insight 1.1**
+**Business Insight**
 
 Sales, profit and order volume increased consistently from 2014 to 2017, with 2017 recording the strongest performance. However, 2018 contains only 25 orders, compared with 1,683 in 2017. This suggests that the dataset may contain only partial 2018 records, so direct annual comparisons would be misleading.
 
 Important observation: The 2018 result is not necessarily a business decline. We need to investigate the monthly distribution before drawing conclusions.
 
-**Business Insight 1.2**
+**Business Insight**
 
 Sales performance varies considerably across months. November and December recorded the highest revenue, while September also demonstrated strong performance. February recorded the lowest revenue. This suggests potential seasonal sales patterns, with stronger performance toward the final months of the year
 
-**Business Insight 1.3**
+**Business Insight**
 
 December generated the highest sales revenue ($334,484.49), followed by November and September. However, November generated the highest profit ($43,843.24), despite ranking second in sales. This indicates that the month generating the most revenue does not necessarily generate the most profit.
 
 Important business observation: November appears particularly strong in profitability, making it worth investigating further when we analyse profit margins.
 
-**Business Insight 1.4**
+**Business Insight**
 
 Monthly sales experienced considerable fluctuations throughout the four-year period. March and September repeatedly recorded significant increases, while January 2018 showed a 94.08% decline compared with December 2017. 
 
@@ -32,7 +32,7 @@ Monthly sales experienced considerable fluctuations throughout the four-year per
 **Sales Performance by Product Category**
 
 
-**Bussiness Insights 2.1**
+**Bussiness Insights**
 
  Sales by Product Category
 
@@ -43,7 +43,7 @@ Furniture generates $741,999.80 in sales but contributes only $18,451.27 in prof
 Technology is the strongest-performing category in both revenue and profit. Office Supplies leads in sales volume, while Furniture generates relatively low profit despite substantial revenue. This suggests that Furniture may have pricing or cost-related profitability challenges that require further investigation.
 
 
-**Bussiness Insights 2.1**
+**Bussiness Insights**
 
 Sales by Sub-Category
 
@@ -58,7 +58,7 @@ Paper performed well, generating $34,053.57 profit from $78,479.21 in sales.
 Phones lead in revenue, while Copiers deliver the highest profit despite relatively low sales volume. However, Tables, Bookcases and Supplies operate at a loss. Tables are the biggest concern, suggesting that their pricing, discounting or operating costs may be affecting profitability.
 
 
-**Bussiness Insights 2.2**
+**Bussiness Insights**
 
  Profit Margin by Category
 
@@ -69,7 +69,7 @@ Furniture has a significantly lower margin of 2.49%.
 Technology and Office Supplies convert approximately 17% of their sales into profit, indicating relatively strong profitability. Furniture converts only 2.49%, confirming that its profitability is considerably weaker despite generating substantial revenue. Further investigation into Furniture's products, discounts and costs is necessary
 
 
-**Bussiness Insights 2.3**
+**Bussiness Insights**
 
  Top 10 Most Profitable Products
 
@@ -82,7 +82,7 @@ The Fellowes PB500 Electric Punch also performs strongly, generating $7,753.04 i
 
 Technology products dominate the top 10 most profitable products, particularly Canon and HP printing equipment. The Canon imageCLASS 220 is the leading profit contributor, while Copiers consistently demonstrate strong profitability. This reinforces Technology's position as the strongest-performing category.
 
-**Bussiness Insights 2.4**
+**Bussiness Insights**
 Top 10 Loss-Making Products
 
 Key findings:
@@ -94,3 +94,61 @@ The GBC DocuBind P400 Electric Binder generated $17,965.07 in sales but incurred
 
 
 Losses are concentrated in certain Machines and Tables products. The Cubify CubeX 3D Printer records the largest individual product loss of $8,879.97. This reinforces the earlier findings about weak Furniture profitability and suggests that selected Technology products also require closer attention. Pricing, discounts and product costs should be investigated.
+
+
+**Customer Analysis**
+
+**Bussiness Insights**
+Sales by Customer Segment
+
+Key findings:
+
+ Consumer leads in sales, generating $1,161,401.35, approximately 50.6% of total business revenue.
+ Corporate follows with $706,146.37 in sales.
+ Home Office generates the lowest sales at $429,653.15.
+ Consumer also has the highest number of customers (409) and orders (2,586).
+ 
+The Consumer segment is the largest contributor to business revenue, accounting for approximately 50.6% of total sales. It also has the highest customer and order counts. Corporate and Home Office contribute smaller portions of revenue, indicating that the Consumer segment is currently the business's strongest customer group.
+
+
+**Bussiness Insights**
+
+Top 10 Customers by Sales
+
+Key findings:
+
+Sean Miller is the highest-spending customer, generating $25,043.05 in sales across 5 orders.
+However, Sean Miller generated a loss of $1,980.74.
+Tamara Chand ranks second in sales but generates $8,981.32 in profit.
+Adrian Barton has the highest order count among the top 10 customers, with 10 orders? Correction: Ken Lonsdale has the highest, with 12 orders.
+Ken Lonsdale generated $14,175.23 in sales but only $806.86 in profit.
+ 
+Sean Miller is the highest-spending customer, but his purchases resulted in a net loss of $1,980.74. This demonstrates that high customer spending does not necessarily translate into profitability. Ken Lonsdale also has a relatively high order frequency but a low profit contribution, suggesting that customer value should be evaluated using both revenue and profit.
+
+
+**Bussiness Insights**
+Top 10 Customers by Profit
+
+Key findings:
+
+ Tamara Chand is the most profitable customer, contributing $8,981.32 in profit.
+ Raymond Buch ranks second with $6,976.10.
+ Sanjit Chand contributes $5,757.41.
+ Keith Dawkins has the highest order count among these customers, with 12 orders.
+ Tamara Chand also ranked second in sales, showing strong performance in both revenue and profitability.
+ 
+Tamara Chand is the most profitable customer, generating $8,981.32 in profit. Several customers, including Raymond Buch and Sanjit Chand, also contribute significantly to profitability. The findings show that customer value is not determined by sales volume alone; profit contribution provides another important measure of customer performance.
+
+
+**Bussiness Insights**
+
+Customer Purchasing Patterns
+
+Key findings:
+
+134 customers placed 5 orders, the largest customer group.
+Only 12 customers placed a single order.
+781 out of 793 customers (98.49%) placed more than one order.
+One customer placed 17 orders, the highest frequency recorded.
+
+The majority of customers placed multiple orders during the period analysed, with approximately 98.49% purchasing more than once. Customers placing 5–8 orders form the largest concentration of purchasing activity. This indicates strong repeat-purchase activity within the dataset, although further analysis would be needed to understand customer retention over time.
